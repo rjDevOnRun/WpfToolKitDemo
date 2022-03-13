@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "yfvAua28pTtwo4hpk6jICQSYL2VgIyiwIsMr1qFYJZhjIeLibn36FtADb/SDzi/mqqkxlwzg9SHcjTZt5myQuw==",
+  "success": true,
+  "projectFilePath": "D:\\DEVELOPMENT\\WPF\\WpfToolKitDemo\\WpfApp\\WpfApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\OK\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0-preview2\\communitytoolkit.mvvm.8.0.0-preview2.nupkg.sha512",
+    "C:\\Users\\OK\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\OK\\.nuget\\packages\\mvvmcross\\8.0.2\\mvvmcross.8.0.2.nupkg.sha512",
+    "C:\\Users\\OK\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\OK\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

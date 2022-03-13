@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        xmlns:vm="clr-namespace:WpfApp.ViewModels"
+        mc:Ignorable="d"
+        Title="WPF with Traditional v/s CommunityTookKit.MVVM Approach" Height="250" Width="500">
+    <Window.DataContext>
+        <!--<vm:PersonMvxViewModel></vm:PersonMvxViewModel>-->
+        <vm:PersonCMViewModel></vm:PersonCMViewModel>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="1" Grid.Row="1" Foreground="Red"
+               Content="{Binding FullName}"/>
+
+        <TextBox Grid.Column="1" Grid.Row="2"
+                 Text="{Binding FirstName, Mode=TwoWay}"/>
+
+        <TextBox Grid.Column="1" Grid.Row="3"
+                 Text="{Binding LastName, Mode=TwoWay}"/>
+
+        <Button Grid.Column="1" Grid.Row="4"
+                Command="{Binding BuildFullNameCommand}" Content="Generate Name"></Button>
+
+    </Grid>
+</Window>
